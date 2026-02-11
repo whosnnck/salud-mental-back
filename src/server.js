@@ -15,10 +15,12 @@ const app = express();
 // Durante desarrollo reflejamos el origin para aceptar el puerto que Angular use
 app.use(
   cors({
-    /*
+    
     origin: true,
-    */
+    
+    /*
     origin: "https://salud-mental-front.vercel.app",
+    */
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
