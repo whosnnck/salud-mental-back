@@ -16,7 +16,7 @@ const app = express();
 app.use(
   cors({
     
-    origin: true,
+    origin: "http://localhost:4200",  //true,
     
     /*
     origin: "https://salud-mental-front.vercel.app",
